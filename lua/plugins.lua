@@ -7,7 +7,7 @@ function M.setup()
 	-- packer.nvim configuration
 	local conf = {
 		display = {
-			open_fn = function()
+			open_fn = function()   
 				return require("packer.util").float({ border = "rounded" })
 			end,
 		},
@@ -69,8 +69,7 @@ function M.setup()
 			end,
 			requires = {
 				{ "windwp/nvim-ts-autotag", event = "InsertEnter" },
-				{ "JoosepAlviste/nvim-ts-context-commentstring", event = "BufReadPre" },
-				{ "p00f/nvim-ts-rainbow", event = "BufReadPre" },
+				{ "JoosepAlviste/nvim-ts-context-commentstring" },
 			},
 		})
 		-- Status line
